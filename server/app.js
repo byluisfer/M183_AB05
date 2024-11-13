@@ -1,6 +1,6 @@
-const express = require("express");
-const http = require("http");
-const { initializeAPI } = require("./api");
+import express from "express";
+import http from "http";
+import initializeAPI from "./api.js";
 
 // Create the express server
 const app = express();

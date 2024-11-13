@@ -1,5 +1,6 @@
 const initializeAPI = async (app) => {
   app.post("/api/login", login);
+  app.post("/api/posts", createPost); 
 };
 
 const login = async (req, res) => {
@@ -14,4 +15,4 @@ const login = async (req, res) => {
   res.send(answer);
 };
 
-module.exports = { initializeAPI };
+export default initializeAPI;
